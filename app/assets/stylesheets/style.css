@@ -1,0 +1,56 @@
+.bit-4 {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #999999;
+  color: #606e67;
+}
+
+.bit-2 {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #999999;
+  color: #606e67;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 360px;
+  background: #3f4944;
+}
+
+.frame {
+  margin-top: 150px;
+}
+
+html {
+  background: #efeddf;
+}
+
+#main-header {
+  height: 140px;
+  background: #57645d;  
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  z-index: 100000;
+  width: 100%;
+
+}
+
+
+#main-nav ul {
+  text-align: center;
+  margin-top: 120px;
+  padding-top: 
+}
+
+#main-nav ul li {
+  padding-left: 10px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+
