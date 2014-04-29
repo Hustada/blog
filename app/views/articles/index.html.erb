@@ -2,17 +2,15 @@
 
 
 <div class="bit-75">
-<h1 id="article header">Listing articles</h1>
  <table>
+  <% @article.each do |article| %>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th><%= article.title %></th>
     <th colspan="3"></th>
   </tr>
  
-  <% @article.each do |article| %>
+  
     <tr>
-      <td><%= article.title %></td>
       <td><%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
