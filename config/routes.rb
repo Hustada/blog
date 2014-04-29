@@ -6,6 +6,9 @@ Blog::Application.routes.draw do
   end
 
   get "welcome/index"
+
+  match '/about',     to: 'static_pages#about',   via: 'get'
+  match '/contact',   to: 'static_pages#contact',   via: 'get'
   
 
   # Example of regular route:
