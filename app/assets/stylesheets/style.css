@@ -35,6 +35,11 @@ html,body {
   height: 100%;
 }
 
+
+#article-header {
+  color: #555;
+}
+
 #main-header {
   height: 140px;
   background: #57645d;  
