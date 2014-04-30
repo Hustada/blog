@@ -5,7 +5,7 @@
 
   <% @article.each do |article| %>
 
-    <h2 id="article-header"><%= link_to article.title, article_path(article) %></h2>
+    <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
     <br>
     <br>
 
@@ -14,7 +14,7 @@
   
     <tr>
       <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Comment', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?'} %></td>
@@ -26,4 +26,9 @@
 </table>
 <%= link_to 'New article', new_article_path %>
 </div>
-<div class="bit-25"><h2>Recent Posts</h2></div>
+<div class="bit-25"><h2>Recent Posts</h2>
+  <ul>
+    
+  </ul>
+</div>
+
