@@ -38,6 +38,7 @@ html,body {
 
 #article-header {
   color: #555;
+  text-decoration: none;
 }
 
 #main-header {
@@ -55,7 +56,6 @@ html,body {
 #main-nav ul {
   text-align: center;
   margin-top: 120px;
-  padding-top: 
 }
 
 #main-nav ul li {
@@ -64,7 +64,7 @@ html,body {
   margin-right: 20px;
 }
 
-#main-nav ul li a {
+#main-nav ul li a:link, a:active, a:hover, a:visited, {
   text-decoration: none;
   color: #efeddf;
 }

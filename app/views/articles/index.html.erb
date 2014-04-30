@@ -5,7 +5,7 @@
 
   <% @article.each do |article| %>
 
-    <div id="article-header"><h2><%= link_to article.title, article_path(article) %></h2></div>
+    <h2 id="article-header"><%= link_to article.title, article_path(article) %></h2>
     <br>
     <br>
 
