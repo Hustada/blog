@@ -7,28 +7,26 @@
 
     <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
     <br>
+
+    <ul id="article-links">
+      <li id="article-text"><%= article.text %></li>
     <br>
-
-  
- 
-  
-    <tr>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Comment', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-                    method: :delete, data: { confirm: 'Are you sure?'} %></td>
-
-    </tr>
-     <br>
-     <br>
+      <li><%= link_to 'Make a Comment', article_path(article) %></li>
+      <li><%= link_to 'Edit',           edit_article_path(article) %></li>
+      <li><%= link_to 'Destroy',        article_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?'} %></li>
+    </ul>
+     
   <% end %>
-</table>
-<%= link_to 'New article', new_article_path %>
+
+<div id="new-article-path"><%= link_to 'New article', new_article_path %></div>
 </div>
-<div class="bit-25"><h2>Recent Posts</h2>
-  <ul>
-    
+<div class="bit-5"><h2>Recent Posts</h2>
+  <br>
+  <% @article.each do |article| %>
+  <ul id="recent-article">
+    <li><%= link_to article.title, article_path(article) %></li>
   </ul>
+  <% end %>
 </div>
 

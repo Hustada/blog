@@ -1,4 +1,20 @@
-.bit-25 {
+
+#article-links {
+  list-style-type: none;
+}
+
+#article-links a {
+  font-weight: bold;
+  color: #3f4944;
+  text-decoration: none;
+}
+
+#article-text {
+
+}
+
+.bit-5 {
+  background: white;
   padding: 20px;
   text-align: center;
   border: 2px solid #999999;
@@ -8,10 +24,12 @@
 }
 
 .bit-75 {
+  background: white;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   border: 2px solid #999999;
   color: #606e67;
+  text-indent: 
 }
 
 
@@ -31,7 +49,7 @@ footer {
 
 
 html,body {
-  background: #efeddf;
+  background: url(graygreenwood.jpg);
   height: 100%;
 }
 
@@ -71,3 +89,16 @@ html,body {
 
 
 
+#new-article-path a {
+  font-weight: bold;
+  color: #3f4944;
+}
+
+#recent-article li {
+  list-style: none;
+}
+
+#recent-article li a {
+  color: #57645d;
+  text-decoration: none;
+}
