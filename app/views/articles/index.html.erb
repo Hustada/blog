@@ -11,6 +11,8 @@
     <ul id="article-links">
       <li id="article-text"><%= article.text %></li>
     <br>
+    <%= article.created_at %>
+    <br>
       <li><%= link_to 'Make a Comment', article_path(article) %></li>
       <li><%= link_to 'Edit',           edit_article_path(article) %></li>
       <li><%= link_to 'Destroy',        article_path(article),
@@ -28,5 +30,12 @@
     <li><%= link_to article.title, article_path(article) %></li>
   </ul>
   <% end %>
+  <br>
+  <br>
+  <h2>Archives</h2>
+    
+  <br>
+  <br>
+  <h2>Tags</h2>
 </div>
 
