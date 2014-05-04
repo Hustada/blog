@@ -9,7 +9,9 @@
     <br>
 
     <ul id="article-links">
-      <li id="article-text"><%= article.text %></li>
+      <div id="article-image"><%= image_tag article.image_url %></div>
+      <br>
+      <li id="article-text"><%= article.text %></li>
     <br>
     <%= article.created_at %>
     <br>
@@ -33,7 +35,7 @@
   <br>
   <br>
   <h2>Archives</h2>
-    
+
   <br>
   <br>
   <h2>Tags</h2>

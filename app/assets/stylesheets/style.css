@@ -10,6 +10,10 @@
   text-align: left;
 }
 
+#article-image {
+  float: left;
+ }
+
 
 #article-links {
   list-style-type: none;
@@ -21,11 +25,17 @@
   text-decoration: none;
 }
 
+#article-links img {
+  margin-right: 20px;
+}
+
 #article-show {
   background: #efeddf;
   padding: 20px;
   border: 2px solid #57645d;
 }
+
+
 
 .bit-5 {
   background: white;
