@@ -15,5 +15,13 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function() {
-  
+
+    $("#main-nav ul li a").mouseenter(function () {
+      $(this).switchclass("style1", "style2", 700);
+    });
+
+    $("#main-nav ul li a").mouseenter(function () {
+      $(this).switchclass("style1", "style2", 700);
+    });
+
 };)

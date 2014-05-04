@@ -21,8 +21,10 @@
   text-decoration: none;
 }
 
-#article-text {
-
+#article-show {
+  background: #efeddf;
+  padding: 20px;
+  border: 2px solid #57645d;
 }
 
 .bit-5 {
@@ -71,7 +73,7 @@ footer {
 
 
 html,body {
-  background: url(graygreenwood.jpg);
+  background: #efeddf;
   height: 100%;
 }
 
@@ -82,7 +84,7 @@ html,body {
 }
 
 #main-header {
-  height: 140px;
+  height: 180px;
   background: #57645d;  
   position: fixed;
   top: 0px;
@@ -107,6 +109,7 @@ html,body {
 #main-nav ul li a {
   text-decoration: none;
   color: #efeddf;
+  font-size: x-large;
 }
 
 
