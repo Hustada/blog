@@ -12,6 +12,7 @@ gem 'cells'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
+gem 'bcrypt-ruby'
 
 group :doc do
 
