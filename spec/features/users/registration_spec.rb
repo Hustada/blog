@@ -8,11 +8,12 @@ describe  "Signing Up" do
     expect(page).to have_content("Sign Up")
     click_link "Sign Up"
 
-    fill_in "First Name",            with: "Mark"
-    fill_in "Last Name",             with: "Hustad"
+    fill_in "First name",            with: "Mark"
+    fill_in "Last name",             with: "Hustad"
+    fill_in "Email",                 with: "hustad@example.com"   
     fill_in "Password",              with: "password123"
-    fill_in "Password Confirmation", with: "password123"
-    click_button "Sign Up"
+    fill_in "Password confirmation", with: "password123"
+    click_button "Create User"
 
 
     expect(User.count).to eq(1)
