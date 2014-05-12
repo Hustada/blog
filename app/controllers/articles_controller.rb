@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
 
   def index
     @article = Article.all
+    
   end
 
   def create  
@@ -44,6 +45,8 @@ class ArticlesController < ApplicationController
 
     redirect_to articles_path
   end
+
+
 
   private
   
