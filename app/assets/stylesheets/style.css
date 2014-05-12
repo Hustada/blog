@@ -4,6 +4,8 @@
   background: #efeddf;
   padding: 20px;
   border: 2px solid #57645d;
+  color: #57645d;
+  text-indent: left;
 }
 
 #about-content {
@@ -13,6 +15,8 @@
 #article-image {
   float: left;
  }
+
+
 
 
 #article-links {
@@ -66,6 +70,8 @@
   background: #efeddf;
   padding: 20px;
   border: 2px solid #57645d;
+  color: #57645d;
+  text-indent: left;
 }
 
 #contact-content {
@@ -88,9 +94,19 @@ html,body {
 }
 
 
-#title a {
-  color: #555;
-  text-decoration: none !important;
+#login {
+  float: right;
+  margin-right: 10px;
+}
+
+#login a {
+  text-decoration: none;
+  color: #efeddf;
+}
+
+#login-form {
+  text-align: center;
+  color: #57645d;
 }
 
 #main-header {
@@ -129,6 +145,11 @@ html,body {
   color: #3f4944;
 }
 
+#new-user {
+  text-align: center;
+  color: #57645d;
+}
+
 #recent-article li {
   list-style: none;
 }
@@ -137,3 +158,19 @@ html,body {
   color: #57645d;
   text-decoration: none;
 }
+
+#sign-up {
+  float: right;
+  margin-right: 10px;
+}
+
+#sign-up a {
+  text-decoration: none;
+  color: #efeddf;
+}
+
+#title a {
+  color: #555;
+  text-decoration: none !important;
+}
+

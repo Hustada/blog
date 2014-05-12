@@ -25,19 +25,26 @@
 
 <div id="new-article-path"><%= link_to 'New article', new_article_path %></div>
 </div>
-<div class="bit-5"><h2>Recent Posts</h2>
-  <br>
+<div class="bit-5">
+  <h2>Recent Posts</h2>
+  
+    <br>
+  
   <% @article.each do |article| %>
-  <ul id="recent-article">
-    <li><%= link_to article.title, article_path(article) %></li>
-  </ul>
+  
+    <ul id="recent-article">
+      <li><%= link_to article.title, article_path(article) %></li>
+    </ul>
+  
   <% end %>
-  <br>
-  <br>
+    <br>
+    <br>
+  
   <h2>Archives</h2>
-         bbhhn
-  <br>
-  <br>
+  
+    <br>
+    <br>
+  
   <h2>Tags</h2>
 </div>
 

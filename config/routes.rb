@@ -1,7 +1,7 @@
 Blog::Application.routes.draw do
-  get "sessions/new"
-  get "sessions/create"
+   
   resources :users
+  resources :sessions, only: [:new, :create]
 
   root 'articles#index'
 
@@ -12,8 +12,9 @@ Blog::Application.routes.draw do
   get "welcome/index"
 
   match '/about',     to: 'static_pages#about',   via: 'get'
-  match '/contact',   to: 'static_pages#contact',   via: 'get'
-  
+  match '/contact',   to: 'static_pages#contact', via: 'get'
+  match '/login',     to: 'sessions#new',         via: 'get'  
+  match 'signup',     to: 'users#new',            via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
