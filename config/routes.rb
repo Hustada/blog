@@ -15,6 +15,7 @@ Blog::Application.routes.draw do
   match '/contact',   to: 'static_pages#contact', via: 'get'
   match '/login',     to: 'sessions#new',         via: 'get'  
   match 'signup',     to: 'users#new',            via: 'get'
+  match '/login',     to: 'sessions#create',      via: 'post'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
